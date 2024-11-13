@@ -1,0 +1,52 @@
+[0.000000] (-) TimerEvent: {}
+[0.001241] (mavros_msgs) JobQueued: {'identifier': 'mavros_msgs', 'dependencies': OrderedDict()}
+[0.001468] (mavros) JobQueued: {'identifier': 'mavros', 'dependencies': OrderedDict([('mavros_msgs', '/home/bumblebee*/bumblebee_ws/install/mavros_msgs')])}
+[0.001755] (mavros_extras) JobQueued: {'identifier': 'mavros_extras', 'dependencies': OrderedDict([('mavros_msgs', '/home/bumblebee*/bumblebee_ws/install/mavros_msgs'), ('mavros', '/home/bumblebee*/bumblebee_ws/install/mavros')])}
+[0.001923] (mavros_msgs) JobStarted: {'identifier': 'mavros_msgs'}
+[0.039325] (mavros_msgs) JobProgress: {'identifier': 'mavros_msgs', 'progress': 'cmake'}
+[0.042319] (mavros_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/bumblebee*/bumblebee_ws/src/mavros_msgs', '-DCMAKE_INSTALL_PREFIX=/home/bumblebee*/bumblebee_ws/install/mavros_msgs'], 'cwd': '/home/bumblebee*/bumblebee_ws/build/mavros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bumblebee'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bumblebee*'), ('OLDPWD', '/home/bumblebee*'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1330'), ('SYSTEMD_EXEC_PID', '1562'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1810'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bumblebee'), ('JOURNAL_STREAM', '8:24393'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bumblebee'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1412,unix/ubuntu:/tmp/.ICE-unix/1412'), ('INVOCATION_ID', 'd04960200c724df09508484639953790'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.36YHX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bumblebee*/bumblebee_ws/build/mavros_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098014] (-) TimerEvent: {}
+[0.098679] (mavros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.198177] (-) TimerEvent: {}
+[0.298890] (-) TimerEvent: {}
+[0.399567] (-) TimerEvent: {}
+[0.500258] (-) TimerEvent: {}
+[0.600928] (-) TimerEvent: {}
+[0.680667] (mavros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.698526] (mavros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.701107] (-) TimerEvent: {}
+[0.709957] (mavros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.801322] (-) TimerEvent: {}
+[0.902063] (-) TimerEvent: {}
+[0.905021] (mavros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.002241] (-) TimerEvent: {}
+[1.008699] (mavros_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[1.056274] (mavros_msgs) StdoutLine: {'line': b'-- Found rcl_interfaces: 1.2.1 (/opt/ros/humble/share/rcl_interfaces/cmake)\n'}
+[1.102429] (-) TimerEvent: {}
+[1.203146] (-) TimerEvent: {}
+[1.288471] (mavros_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:18 (find_package):\n'}
+[1.289543] (mavros_msgs) StderrLine: {'line': b'  By not providing "Findgeographic_msgs.cmake" in CMAKE_MODULE_PATH this\n'}
+[1.289920] (mavros_msgs) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[1.290247] (mavros_msgs) StderrLine: {'line': b'  "geographic_msgs", but CMake did not find one.\n'}
+[1.290681] (mavros_msgs) StderrLine: {'line': b'\n'}
+[1.291109] (mavros_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "geographic_msgs"\n'}
+[1.291683] (mavros_msgs) StderrLine: {'line': b'  with any of the following names:\n'}
+[1.292159] (mavros_msgs) StderrLine: {'line': b'\n'}
+[1.292607] (mavros_msgs) StderrLine: {'line': b'    geographic_msgsConfig.cmake\n'}
+[1.293028] (mavros_msgs) StderrLine: {'line': b'    geographic_msgs-config.cmake\n'}
+[1.293808] (mavros_msgs) StderrLine: {'line': b'\n'}
+[1.294870] (mavros_msgs) StderrLine: {'line': b'  Add the installation prefix of "geographic_msgs" to CMAKE_PREFIX_PATH or\n'}
+[1.295751] (mavros_msgs) StderrLine: {'line': b'  set "geographic_msgs_DIR" to a directory containing one of the above files.\n'}
+[1.296303] (mavros_msgs) StderrLine: {'line': b'  If "geographic_msgs" provides a separate development package or SDK, be\n'}
+[1.296817] (mavros_msgs) StderrLine: {'line': b'  sure it has been installed.\n'}
+[1.297310] (mavros_msgs) StderrLine: {'line': b'\n'}
+[1.297909] (mavros_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.299085] (mavros_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.299967] (mavros_msgs) StdoutLine: {'line': b'See also "/home/bumblebee*/bumblebee_ws/build/mavros_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[1.303339] (-) TimerEvent: {}
+[1.307646] (mavros_msgs) CommandEnded: {'returncode': 1}
+[1.392543] (mavros_msgs) JobEnded: {'identifier': 'mavros_msgs', 'rc': 1}
+[1.403517] (-) TimerEvent: {}
+[1.404764] (mavros) JobSkipped: {'identifier': 'mavros'}
+[1.405295] (mavros_extras) JobSkipped: {'identifier': 'mavros_extras'}
+[1.405601] (-) EventReactorShutdown: {}

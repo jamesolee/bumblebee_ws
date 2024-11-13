@@ -1,0 +1,6 @@
+Invoking command in '/home/bumblebee*/bumblebee_ws/build/mavros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/bumblebee*/bumblebee_ws/src/mavros_msgs -DCMAKE_INSTALL_PREFIX=/home/bumblebee*/bumblebee_ws/install/mavros_msgs
+Invoked command in '/home/bumblebee*/bumblebee_ws/build/mavros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/bumblebee*/bumblebee_ws/src/mavros_msgs -DCMAKE_INSTALL_PREFIX=/home/bumblebee*/bumblebee_ws/install/mavros_msgs
+Invoking command in '/home/bumblebee*/bumblebee_ws/build/mavros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/bumblebee*/bumblebee_ws/build/mavros_msgs -- -j4 -l4
+Invoked command in '/home/bumblebee*/bumblebee_ws/build/mavros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/bumblebee*/bumblebee_ws/build/mavros_msgs -- -j4 -l4
+Invoking command in '/home/bumblebee*/bumblebee_ws/build/mavros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/bumblebee*/bumblebee_ws/build/mavros_msgs
+Invoked command in '/home/bumblebee*/bumblebee_ws/build/mavros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/bumblebee*/bumblebee_ws/build/mavros_msgs
