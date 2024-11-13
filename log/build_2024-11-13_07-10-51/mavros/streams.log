@@ -1,0 +1,38 @@
+[0.108s] Invoking command in '/home/bumblebee*/bumblebee_ws/build/mavros': AMENT_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bumblebee*/bumblebee_ws/build/mavros -- -j4 -l4
+[0.699s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/compiler_depend.make' has modification time 67 s in the future
+[0.748s] gmake[2]: Warning: File 'CMakeFiles/mavros.dir/compiler_depend.make' has modification time 67 s in the future
+[0.753s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.765s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/compiler_depend.make' has modification time 66 s in the future
+[0.812s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.825s] [  0%] Built target ament_cmake_python_copy_mavros_setup
+[0.851s] gmake[2]: Warning: File 'CMakeFiles/mavros.dir/compiler_depend.make' has modification time 66 s in the future
+[0.853s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/compiler_depend.make' has modification time 67 s in the future
+[0.862s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.899s] [  3%] Built target gtest_main
+[0.904s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.905s] [  3%] Built target ament_cmake_python_copy_mavros
+[0.914s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/compiler_depend.make' has modification time 66 s in the future
+[0.923s] gmake[2]: Warning: File 'gmock/CMakeFiles/gmock_main.dir/compiler_depend.make' has modification time 66 s in the future
+[0.925s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.932s] gmake[2]: Warning: File 'gmock/CMakeFiles/gmock.dir/compiler_depend.make' has modification time 66 s in the future
+[0.970s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.971s] [  6%] Built target gtest
+[0.981s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.982s] gmake[2]: Warning: File 'gmock/CMakeFiles/gmock_main.dir/compiler_depend.make' has modification time 66 s in the future
+[0.993s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.994s] gmake[2]: Warning: File 'gmock/CMakeFiles/gmock.dir/compiler_depend.make' has modification time 66 s in the future
+[1.001s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.041s] [ 11%] Built target gmock
+[1.046s] [ 14%] Built target gmock_main
+[1.052s] [ 16%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_router.cpp.o[0m
+[1.087s] [ 17%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_uas.cpp.o[0m
+[1.089s] [ 19%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/plugin.cpp.o[0m
+[2.510s] running egg_info
+[2.514s] writing mavros.egg-info/PKG-INFO
+[2.515s] writing dependency_links to mavros.egg-info/dependency_links.txt
+[2.516s] writing entry points to mavros.egg-info/entry_points.txt
+[2.517s] writing top-level names to mavros.egg-info/top_level.txt
+[2.535s] reading manifest file 'mavros.egg-info/SOURCES.txt'
+[2.539s] writing manifest file 'mavros.egg-info/SOURCES.txt'
+[2.697s] [ 19%] Built target ament_cmake_python_build_mavros_egg
+[2.743s] [ 20%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_ap.cpp.o[0m

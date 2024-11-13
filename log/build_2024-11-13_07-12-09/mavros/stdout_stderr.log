@@ -1,0 +1,18 @@
+[  3%] Built target gtest_main
+[  3%] Built target ament_cmake_python_copy_mavros_setup
+[  3%] Built target ament_cmake_python_copy_mavros
+[  9%] Built target gmock_main
+[  9%] Built target gtest
+[ 14%] Built target gmock
+[ 16%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_router.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_uas.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/plugin.cpp.o[0m
+running egg_info
+writing mavros.egg-info/PKG-INFO
+writing dependency_links to mavros.egg-info/dependency_links.txt
+writing entry points to mavros.egg-info/entry_points.txt
+writing top-level names to mavros.egg-info/top_level.txt
+reading manifest file 'mavros.egg-info/SOURCES.txt'
+writing manifest file 'mavros.egg-info/SOURCES.txt'
+[ 19%] Built target ament_cmake_python_build_mavros_egg
+[ 20%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_ap.cpp.o[0m

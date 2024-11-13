@@ -23,6 +23,9 @@ AMENT_CMAKE_ENVIRONMENT_PACKAGE_GENERATION:BOOL=ON
 //Generate marker file containing the parent prefix path
 AMENT_CMAKE_ENVIRONMENT_PARENT_PREFIX_PATH_GENERATION:BOOL=ON
 
+//Generate coverage information for Python tests
+AMENT_CMAKE_PYTEST_WITH_COVERAGE:BOOL=OFF
+
 //Replace the CMake install command with a custom implementation
 // using symlinks instead of copying resources
 AMENT_CMAKE_SYMLINK_INSTALL:BOOL=OFF
@@ -232,6 +235,9 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/usr/share/eigen3/cmake
+
 //Path to a library.
 FastCDR_LIBRARY_DEBUG:FILEPATH=FastCDR_LIBRARY_DEBUG-NOTFOUND
 
@@ -246,6 +252,18 @@ FastRTPS_LIBRARY_DEBUG:FILEPATH=FastRTPS_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
 FastRTPS_LIBRARY_RELEASE:FILEPATH=/opt/ros/humble/lib/libfastrtps.so
+
+//Path to a file.
+GEOGRAPHICLIB_GEOID_PATH:PATH=GEOGRAPHICLIB_GEOID_PATH-NOTFOUND
+
+//Path to a file.
+GEOGRAPHICLIB_GRAVITY_PATH_:PATH=GEOGRAPHICLIB_GRAVITY_PATH_-NOTFOUND
+
+//Path to a file.
+GEOGRAPHICLIB_MAGNETIC_PATH_:PATH=GEOGRAPHICLIB_MAGNETIC_PATH_-NOTFOUND
+
+//Path to a library.
+GeographicLib_LIBRARIES:FILEPATH=/usr/lib/aarch64-linux-gnu/libGeographic.so
 
 //Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libcrypto.so
@@ -277,14 +295,38 @@ TINYXML2_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libtinyxml2.so
 //The directory containing a CMake configuration file for TinyXML2.
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
+//Path to a file.
+_gmock_header_file:FILEPATH=/opt/ros/humble/src/gmock_vendor/include/gmock/gmock.h
+
+//Path to a file.
+_gmock_src_file:FILEPATH=/opt/ros/humble/src/gmock_vendor/src/gmock.cc
+
+//Path to a file.
+_gtest_header_file:FILEPATH=/opt/ros/humble/src/gtest_vendor/include/gtest/gtest.h
+
+//Path to a file.
+_gtest_src_file:FILEPATH=/opt/ros/humble/src/gtest_vendor/src/gtest.cc
+
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libmessage_filters.so
+_lib:FILEPATH=/opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_cpp.so
+
+//The directory containing a CMake configuration file for action_msgs.
+action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
 
+//The directory containing a CMake configuration file for ament_cmake_copyright.
+ament_cmake_copyright_DIR:PATH=/opt/ros/humble/share/ament_cmake_copyright/cmake
+
 //The directory containing a CMake configuration file for ament_cmake_core.
 ament_cmake_core_DIR:PATH=/opt/ros/humble/share/ament_cmake_core/cmake
+
+//The directory containing a CMake configuration file for ament_cmake_cppcheck.
+ament_cmake_cppcheck_DIR:PATH=/opt/ros/humble/share/ament_cmake_cppcheck/cmake
+
+//The directory containing a CMake configuration file for ament_cmake_cpplint.
+ament_cmake_cpplint_DIR:PATH=/opt/ros/humble/share/ament_cmake_cpplint/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_definitions.
 ament_cmake_export_definitions_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_definitions/cmake
@@ -307,14 +349,32 @@ ament_cmake_export_link_flags_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_
 //The directory containing a CMake configuration file for ament_cmake_export_targets.
 ament_cmake_export_targets_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_targets/cmake
 
+//The directory containing a CMake configuration file for ament_cmake_flake8.
+ament_cmake_flake8_DIR:PATH=/opt/ros/humble/share/ament_cmake_flake8/cmake
+
 //The directory containing a CMake configuration file for ament_cmake_gen_version_h.
 ament_cmake_gen_version_h_DIR:PATH=/opt/ros/humble/share/ament_cmake_gen_version_h/cmake
+
+//The directory containing a CMake configuration file for ament_cmake_gmock.
+ament_cmake_gmock_DIR:PATH=/opt/ros/humble/share/ament_cmake_gmock/cmake
+
+//The directory containing a CMake configuration file for ament_cmake_gtest.
+ament_cmake_gtest_DIR:PATH=/opt/ros/humble/share/ament_cmake_gtest/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_include_directories.
 ament_cmake_include_directories_DIR:PATH=/opt/ros/humble/share/ament_cmake_include_directories/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_libraries.
 ament_cmake_libraries_DIR:PATH=/opt/ros/humble/share/ament_cmake_libraries/cmake
+
+//The directory containing a CMake configuration file for ament_cmake_lint_cmake.
+ament_cmake_lint_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake_lint_cmake/cmake
+
+//The directory containing a CMake configuration file for ament_cmake_pep257.
+ament_cmake_pep257_DIR:PATH=/opt/ros/humble/share/ament_cmake_pep257/cmake
+
+//The directory containing a CMake configuration file for ament_cmake_pytest.
+ament_cmake_pytest_DIR:PATH=/opt/ros/humble/share/ament_cmake_pytest/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_python.
 ament_cmake_python_DIR:PATH=/opt/ros/humble/share/ament_cmake_python/cmake
@@ -325,11 +385,47 @@ ament_cmake_target_dependencies_DIR:PATH=/opt/ros/humble/share/ament_cmake_targe
 //The directory containing a CMake configuration file for ament_cmake_test.
 ament_cmake_test_DIR:PATH=/opt/ros/humble/share/ament_cmake_test/cmake
 
+//The directory containing a CMake configuration file for ament_cmake_uncrustify.
+ament_cmake_uncrustify_DIR:PATH=/opt/ros/humble/share/ament_cmake_uncrustify/cmake
+
 //The directory containing a CMake configuration file for ament_cmake_version.
 ament_cmake_version_DIR:PATH=/opt/ros/humble/share/ament_cmake_version/cmake
 
+//The directory containing a CMake configuration file for ament_cmake_xmllint.
+ament_cmake_xmllint_DIR:PATH=/opt/ros/humble/share/ament_cmake_xmllint/cmake
+
+//Path to a program.
+ament_cppcheck_BIN:FILEPATH=/opt/ros/humble/bin/ament_cppcheck
+
+//Path to a program.
+ament_cpplint_BIN:FILEPATH=/opt/ros/humble/bin/ament_cpplint
+
+//Path to a program.
+ament_flake8_BIN:FILEPATH=/opt/ros/humble/bin/ament_flake8
+
 //The directory containing a CMake configuration file for ament_index_cpp.
 ament_index_cpp_DIR:PATH=/opt/ros/humble/share/ament_index_cpp/cmake
+
+//The directory containing a CMake configuration file for ament_lint_auto.
+ament_lint_auto_DIR:PATH=/opt/ros/humble/share/ament_lint_auto/cmake
+
+//Path to a program.
+ament_lint_cmake_BIN:FILEPATH=/opt/ros/humble/bin/ament_lint_cmake
+
+//The directory containing a CMake configuration file for ament_lint_common.
+ament_lint_common_DIR:PATH=/opt/ros/humble/share/ament_lint_common/cmake
+
+//Path to a program.
+ament_pep257_BIN:FILEPATH=/opt/ros/humble/bin/ament_pep257
+
+//Path to a program.
+ament_uncrustify_BIN:FILEPATH=/opt/ros/humble/bin/ament_uncrustify
+
+//Path to a program.
+ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint
+
+//The directory containing a CMake configuration file for angles.
+angles_DIR:PATH=/opt/ros/humble/share/angles/cmake
 
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
@@ -342,6 +438,18 @@ composition_interfaces_DIR:PATH=/opt/ros/humble/share/composition_interfaces/cma
 
 //The directory containing a CMake configuration file for console_bridge.
 console_bridge_DIR:PATH=/usr/lib/aarch64-linux-gnu/console_bridge/cmake
+
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/humble/share/diagnostic_msgs/cmake
+
+//The directory containing a CMake configuration file for diagnostic_updater.
+diagnostic_updater_DIR:PATH=/opt/ros/humble/share/diagnostic_updater/cmake
+
+//The directory containing a CMake configuration file for eigen3_cmake_module.
+eigen3_cmake_module_DIR:PATH=/opt/ros/humble/share/eigen3_cmake_module/cmake
+
+//The directory containing a CMake configuration file for eigen_stl_containers.
+eigen_stl_containers_DIR:PATH=/opt/ros/humble/share/eigen_stl_containers/cmake
 
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
@@ -358,8 +466,50 @@ fmt_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/fmt
 //The directory containing a CMake configuration file for foonathan_memory.
 foonathan_memory_DIR:PATH=/opt/ros/humble/lib/foonathan_memory/cmake
 
+//The directory containing a CMake configuration file for geographic_msgs.
+geographic_msgs_DIR:PATH=/opt/ros/humble/share/geographic_msgs/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
+
+//Value Computed by CMake
+gmock_BINARY_DIR:STATIC=/home/bumblebee*/bumblebee_ws/build/mavros/gmock
+
+//Value Computed by CMake
+gmock_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+gmock_LIB_DEPENDS:STATIC=general;-pthread;
+
+//Value Computed by CMake
+gmock_SOURCE_DIR:STATIC=/opt/ros/humble/src/gmock_vendor
+
+//The directory containing a CMake configuration file for gmock_vendor.
+gmock_vendor_DIR:PATH=/opt/ros/humble/share/gmock_vendor/cmake
+
+//The directory containing a CMake configuration file for google-mock.
+google-mock_DIR:PATH=google-mock_DIR-NOTFOUND
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=/home/bumblebee*/bumblebee_ws/build/mavros/gtest
+
+//The directory containing a CMake configuration file for gtest.
+gtest_DIR:PATH=gtest_DIR-NOTFOUND
+
+//Value Computed by CMake
+gtest_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+gtest_LIB_DEPENDS:STATIC=general;-pthread;
+
+//Value Computed by CMake
+gtest_SOURCE_DIR:STATIC=/opt/ros/humble/src/gtest_vendor
+
+//The directory containing a CMake configuration file for gtest_vendor.
+gtest_vendor_DIR:PATH=/opt/ros/humble/share/gtest_vendor/cmake
+
 //The directory containing a CMake configuration file for libmavconn.
-libmavconn_DIR:PATH=libmavconn_DIR-NOTFOUND
+libmavconn_DIR:PATH=/opt/ros/humble/share/libmavconn/cmake
 
 //The directory containing a CMake configuration file for libstatistics_collector.
 libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/cmake
@@ -376,11 +526,23 @@ mavros_BINARY_DIR:STATIC=/home/bumblebee*/bumblebee_ws/build/mavros
 //Value Computed by CMake
 mavros_IS_TOP_LEVEL:STATIC=ON
 
+//Dependencies for the target
+mavros_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;rclcpp_components::component_manager;general;rcpputils::rcpputils;general;sensor_msgs::sensor_msgs__rosidl_generator_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_cpp;general;sensor_msgs::sensor_msgs__rosidl_generator_py;general;mavros_msgs::mavros_msgs__rosidl_generator_c;general;mavros_msgs::mavros_msgs__rosidl_typesupport_fastrtps_c;general;mavros_msgs::mavros_msgs__rosidl_typesupport_introspection_c;general;mavros_msgs::mavros_msgs__rosidl_typesupport_c;general;mavros_msgs::mavros_msgs__rosidl_typesupport_fastrtps_cpp;general;mavros_msgs::mavros_msgs__rosidl_typesupport_introspection_cpp;general;mavros_msgs::mavros_msgs__rosidl_typesupport_cpp;general;mavros_msgs::mavros_msgs__rosidl_generator_py;general;tf2_ros::tf2_ros;general;tf2_ros::static_transform_broadcaster_node;general;/usr/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0;general;/opt/ros/humble/lib/libmavconn.so;general;/usr/lib/aarch64-linux-gnu/libGeographic.so;
+
 //Value Computed by CMake
 mavros_SOURCE_DIR:STATIC=/home/bumblebee*/bumblebee_ws/src/mavros
 
+//The directory containing a CMake configuration file for mavros_msgs.
+mavros_msgs_DIR:PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/cmake
+
+//Dependencies for the target
+mavros_plugins_LIB_DEPENDS:STATIC=general;mavros;general;geometry_msgs::geometry_msgs__rosidl_generator_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_cpp;general;geometry_msgs::geometry_msgs__rosidl_generator_py;general;geographic_msgs::geographic_msgs__rosidl_generator_c;general;geographic_msgs::geographic_msgs__rosidl_typesupport_fastrtps_c;general;geographic_msgs::geographic_msgs__rosidl_typesupport_fastrtps_cpp;general;geographic_msgs::geographic_msgs__rosidl_typesupport_introspection_c;general;geographic_msgs::geographic_msgs__rosidl_typesupport_c;general;geographic_msgs::geographic_msgs__rosidl_typesupport_introspection_cpp;general;geographic_msgs::geographic_msgs__rosidl_typesupport_cpp;general;geographic_msgs::geographic_msgs__rosidl_generator_py;general;mavros_msgs::mavros_msgs__rosidl_generator_c;general;mavros_msgs::mavros_msgs__rosidl_typesupport_fastrtps_c;general;mavros_msgs::mavros_msgs__rosidl_typesupport_introspection_c;general;mavros_msgs::mavros_msgs__rosidl_typesupport_c;general;mavros_msgs::mavros_msgs__rosidl_typesupport_fastrtps_cpp;general;mavros_msgs::mavros_msgs__rosidl_typesupport_introspection_cpp;general;mavros_msgs::mavros_msgs__rosidl_typesupport_cpp;general;mavros_msgs::mavros_msgs__rosidl_generator_py;general;std_msgs::std_msgs__rosidl_generator_c;general;std_msgs::std_msgs__rosidl_typesupport_fastrtps_c;general;std_msgs::std_msgs__rosidl_typesupport_fastrtps_cpp;general;std_msgs::std_msgs__rosidl_typesupport_introspection_c;general;std_msgs::std_msgs__rosidl_typesupport_c;general;std_msgs::std_msgs__rosidl_typesupport_introspection_cpp;general;std_msgs::std_msgs__rosidl_typesupport_cpp;general;std_msgs::std_msgs__rosidl_generator_py;general;std_srvs::std_srvs__rosidl_generator_c;general;std_srvs::std_srvs__rosidl_typesupport_fastrtps_c;general;std_srvs::std_srvs__rosidl_typesupport_introspection_c;general;std_srvs::std_srvs__rosidl_typesupport_c;general;std_srvs::std_srvs__rosidl_typesupport_fastrtps_cpp;general;std_srvs::std_srvs__rosidl_typesupport_introspection_cpp;general;std_srvs::std_srvs__rosidl_typesupport_cpp;general;std_srvs::std_srvs__rosidl_generator_py;general;sensor_msgs::sensor_msgs__rosidl_generator_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_cpp;general;sensor_msgs::sensor_msgs__rosidl_generator_py;general;nav_msgs::nav_msgs__rosidl_generator_c;general;nav_msgs::nav_msgs__rosidl_typesupport_fastrtps_c;general;nav_msgs::nav_msgs__rosidl_typesupport_fastrtps_cpp;general;nav_msgs::nav_msgs__rosidl_typesupport_introspection_c;general;nav_msgs::nav_msgs__rosidl_typesupport_c;general;nav_msgs::nav_msgs__rosidl_typesupport_introspection_cpp;general;nav_msgs::nav_msgs__rosidl_typesupport_cpp;general;nav_msgs::nav_msgs__rosidl_generator_py;general;trajectory_msgs::trajectory_msgs__rosidl_generator_c;general;trajectory_msgs::trajectory_msgs__rosidl_typesupport_fastrtps_c;general;trajectory_msgs::trajectory_msgs__rosidl_typesupport_fastrtps_cpp;general;trajectory_msgs::trajectory_msgs__rosidl_typesupport_introspection_c;general;trajectory_msgs::trajectory_msgs__rosidl_typesupport_c;general;trajectory_msgs::trajectory_msgs__rosidl_typesupport_introspection_cpp;general;trajectory_msgs::trajectory_msgs__rosidl_typesupport_cpp;general;trajectory_msgs::trajectory_msgs__rosidl_generator_py;general;rclcpp::rclcpp;general;rclcpp_components::component_manager;general;rcpputils::rcpputils;general;tf2_ros::tf2_ros;general;tf2_ros::static_transform_broadcaster_node;general;message_filters::message_filters;general;/usr/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0;general;/opt/ros/humble/lib/libmavconn.so;
+
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/humble/share/nav_msgs/cmake
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/aarch64-linux-gnu/libcrypto.so
@@ -393,6 +555,9 @@ pluginlib_DIR:PATH=/opt/ros/humble/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for rcl.
 rcl_DIR:PATH=/opt/ros/humble/share/rcl/cmake
+
+//The directory containing a CMake configuration file for rcl_action.
+rcl_action_DIR:PATH=/opt/ros/humble/share/rcl_action/cmake
 
 //The directory containing a CMake configuration file for rcl_interfaces.
 rcl_interfaces_DIR:PATH=/opt/ros/humble/share/rcl_interfaces/cmake
@@ -409,8 +574,14 @@ rcl_yaml_param_parser_DIR:PATH=/opt/ros/humble/share/rcl_yaml_param_parser/cmake
 //The directory containing a CMake configuration file for rclcpp.
 rclcpp_DIR:PATH=/opt/ros/humble/share/rclcpp/cmake
 
+//The directory containing a CMake configuration file for rclcpp_action.
+rclcpp_action_DIR:PATH=/opt/ros/humble/share/rclcpp_action/cmake
+
 //The directory containing a CMake configuration file for rclcpp_components.
 rclcpp_components_DIR:PATH=/opt/ros/humble/share/rclcpp_components/cmake
+
+//The directory containing a CMake configuration file for rclpy.
+rclpy_DIR:PATH=/opt/ros/humble/share/rclpy/cmake
 
 //The directory containing a CMake configuration file for rcpputils.
 rcpputils_DIR:PATH=/opt/ros/humble/share/rcpputils/cmake
@@ -481,6 +652,9 @@ rosidl_typesupport_introspection_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesup
 //The directory containing a CMake configuration file for rosidl_typesupport_introspection_cpp.
 rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/cmake
 
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/humble/share/sensor_msgs/cmake
+
 //The directory containing a CMake configuration file for spdlog.
 spdlog_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/spdlog
 
@@ -493,11 +667,35 @@ statistics_msgs_DIR:PATH=/opt/ros/humble/share/statistics_msgs/cmake
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/humble/share/std_msgs/cmake
 
+//The directory containing a CMake configuration file for std_srvs.
+std_srvs_DIR:PATH=/opt/ros/humble/share/std_srvs/cmake
+
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/opt/ros/humble/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_eigen.
+tf2_eigen_DIR:PATH=/opt/ros/humble/share/tf2_eigen/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/opt/ros/humble/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/opt/ros/humble/share/tf2_ros/cmake
+
 //The directory containing a CMake configuration file for tinyxml2_vendor.
 tinyxml2_vendor_DIR:PATH=/opt/ros/humble/share/tinyxml2_vendor/cmake
 
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/humble/share/tracetools/cmake
+
+//The directory containing a CMake configuration file for trajectory_msgs.
+trajectory_msgs_DIR:PATH=/opt/ros/humble/share/trajectory_msgs/cmake
+
+//The directory containing a CMake configuration file for unique_identifier_msgs.
+unique_identifier_msgs_DIR:PATH=/opt/ros/humble/share/unique_identifier_msgs/cmake
+
+//Path to a program.
+xmllint_BIN:FILEPATH=/usr/bin/xmllint
 
 //The directory containing a CMake configuration file for yaml.
 yaml_DIR:PATH=/opt/ros/humble/cmake
@@ -611,7 +809,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -654,14 +852,32 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Eigen3
+FIND_PACKAGE_MESSAGE_DETAILS_Eigen3:INTERNAL=[1][v3.4.0()]
 //Details about finding FastRTPS
 FIND_PACKAGE_MESSAGE_DETAILS_FastRTPS:INTERNAL=[/opt/ros/humble/include][/opt/ros/humble/lib/libfastrtps.so;/opt/ros/humble/lib/libfastcdr.so][v()]
+//Details about finding GeographicLib
+FIND_PACKAGE_MESSAGE_DETAILS_GeographicLib:INTERNAL=[/usr/lib/aarch64-linux-gnu][/usr/lib/aarch64-linux-gnu/libGeographic.so][/usr/include][v()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/aarch64-linux-gnu/libcrypto.so][/usr/include][c ][v3.0.2()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3][cfound components: Interpreter ][v3.10.12()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+GMOCK_FROM_SOURCE_BASE_DIR:INTERNAL=/opt/ros/humble/src/gmock_vendor
+GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE
+GMOCK_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/opt/ros/humble/src/gmock_vendor/include
+GMOCK_FROM_SOURCE_LIBRARIES:INTERNAL=gmock
+GMOCK_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/bumblebee*/bumblebee_ws/build/mavros/gmock
+GMOCK_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gmock_main
+GTEST_FROM_SOURCE_BASE_DIR:INTERNAL=/opt/ros/humble/src/gtest_vendor
+GTEST_FROM_SOURCE_FOUND:INTERNAL=TRUE
+GTEST_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/opt/ros/humble/src/gtest_vendor/include
+GTEST_FROM_SOURCE_LIBRARIES:INTERNAL=gtest
+GTEST_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/bumblebee*/bumblebee_ws/build/mavros/gtest
+GTEST_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gtest_main
+//ADVANCED property for variable: GeographicLib_LIBRARIES
+GeographicLib_LIBRARIES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR
@@ -672,6 +888,9 @@ OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+//The directory for Python library installation. This needs to
+// be in PYTHONPATH when 'setup.py install' is called.
+PYTHON_INSTALL_DIR:INTERNAL=local/lib/python3.10/dist-packages
 //ADVANCED property for variable: TINYXML2_INCLUDE_DIR
 TINYXML2_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: TINYXML2_LIBRARY

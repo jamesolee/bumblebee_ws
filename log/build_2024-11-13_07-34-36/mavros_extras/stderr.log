@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:30 (find_package):
+  By not providing "Findmavros.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "mavros", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "mavros" with any
+  of the following names:
+
+    mavrosConfig.cmake
+    mavros-config.cmake
+
+  Add the installation prefix of "mavros" to CMAKE_PREFIX_PATH or set
+  "mavros_DIR" to a directory containing one of the above files.  If "mavros"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+[0m

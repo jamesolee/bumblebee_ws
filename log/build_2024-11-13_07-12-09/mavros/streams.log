@@ -1,0 +1,19 @@
+[0.060s] Invoking command in '/home/bumblebee*/bumblebee_ws/build/mavros': AMENT_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bumblebee*/bumblebee_ws/build/mavros -- -j4 -l4
+[0.498s] [  3%] Built target gtest_main
+[0.507s] [  3%] Built target ament_cmake_python_copy_mavros_setup
+[0.547s] [  3%] Built target ament_cmake_python_copy_mavros
+[0.639s] [  9%] Built target gmock_main
+[0.640s] [  9%] Built target gtest
+[0.678s] [ 14%] Built target gmock
+[0.684s] [ 16%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_router.cpp.o[0m
+[0.684s] [ 17%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_uas.cpp.o[0m
+[0.723s] [ 19%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/plugin.cpp.o[0m
+[2.140s] running egg_info
+[2.143s] writing mavros.egg-info/PKG-INFO
+[2.145s] writing dependency_links to mavros.egg-info/dependency_links.txt
+[2.146s] writing entry points to mavros.egg-info/entry_points.txt
+[2.147s] writing top-level names to mavros.egg-info/top_level.txt
+[2.159s] reading manifest file 'mavros.egg-info/SOURCES.txt'
+[2.164s] writing manifest file 'mavros.egg-info/SOURCES.txt'
+[2.309s] [ 19%] Built target ament_cmake_python_build_mavros_egg
+[2.347s] [ 20%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_ap.cpp.o[0m

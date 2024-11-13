@@ -1,0 +1,87 @@
+[0.047s] Invoking command in '/home/bumblebee*/bumblebee_ws/build/mavros': AMENT_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/bumblebee*/bumblebee_ws/src/mavros -DCMAKE_INSTALL_PREFIX=/home/bumblebee*/bumblebee_ws/install/mavros
+[0.093s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.661s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.839s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.849s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.873s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.915s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.969s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.098s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.109s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.102s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.284s] -- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)
+[2.352s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[2.548s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[2.577s] -- Found libmavconn: 2.9.0 (/opt/ros/humble/share/libmavconn/cmake)
+[2.608s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.724s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.731s] -- Found GeographicLib: /usr/lib/aarch64-linux-gnu  
+[2.755s] -- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+[2.784s] -- Found eigen_stl_containers: 1.0.0 (/opt/ros/humble/share/eigen_stl_containers/cmake)
+[2.810s] -- Found tf2_eigen: 0.25.8 (/opt/ros/humble/share/tf2_eigen/cmake)
+[3.467s] -- Found diagnostic_msgs: 4.2.4 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[3.556s] -- Found diagnostic_updater: 4.0.0 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[3.612s] -- Found geographic_msgs: 1.0.6 (/opt/ros/humble/share/geographic_msgs/cmake)
+[3.685s] -- Found mavros_msgs: 2.9.0 (/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/cmake)
+[3.905s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.012s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[4.091s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[4.180s] -- No geoid model datasets found. This will result on a SIGINT! Please execute the script install_geographiclib_dataset.sh
+[4.180s] -- No gravity field model datasets found.
+[4.181s] Please execute the script install_geographiclib_dataset.sh
+[4.181s] -- No magnetic field model datasets found. Please execute the script install_geographiclib_dataset.sh
+[4.625s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[4.653s] -- Found ament_cmake_gmock: 1.3.10 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[4.680s] -- Found ament_cmake_pytest: 1.3.10 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[4.705s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.635s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.693s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[7.509s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.512s] -- Configured cppcheck include dirs: 
+[7.513s] -- Configured cppcheck exclude dirs and/or files: ./test/*.cpp
+[7.576s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.576s] -- Configured cpplint exclude dirs and/or files: 
+[7.588s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.609s] -- Added test 'lint_cmake' to check CMake code style
+[7.621s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.685s] -- Added test 'uncrustify' to check C / C++ code style
+[7.685s] -- Configured uncrustify additional arguments: 
+[7.697s] -- Added test 'xmllint' to check XML markup files
+[7.721s] -- Configuring done
+[8.116s] -- Generating done
+[8.131s] -- Build files have been written to: /home/bumblebee*/bumblebee_ws/build/mavros
+[8.184s] Invoked command in '/home/bumblebee*/bumblebee_ws/build/mavros' returned '0': AMENT_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/bumblebee*/bumblebee_ws/src/mavros -DCMAKE_INSTALL_PREFIX=/home/bumblebee*/bumblebee_ws/install/mavros
+[8.192s] Invoking command in '/home/bumblebee*/bumblebee_ws/build/mavros': AMENT_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bumblebee*/bumblebee_ws/build/mavros -- -j4 -l4
+[8.448s] [  1%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[8.452s] [  3%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/enum_sensor_orientation.cpp.o[0m
+[8.484s] [  3%] Built target ament_cmake_python_copy_mavros_setup
+[8.507s] [  3%] Built target ament_cmake_python_copy_mavros
+[8.585s] [  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[8.597s] [  6%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[20.234s] [  8%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[20.441s] [  8%] Built target gtest_main
+[20.571s] [  9%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[22.506s] [ 11%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[22.715s] [ 11%] Built target gmock_main
+[22.765s] [ 12%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[40.488s] [ 14%] [32m[1mLinking CXX static library libgtest.a[0m
+[40.876s] [ 14%] Built target gtest
+[42.976s] [ 16%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/enum_to_string.cpp.o[0m
+[43.582s] running egg_info
+[43.586s] creating mavros.egg-info
+[43.587s] writing mavros.egg-info/PKG-INFO
+[43.589s] writing dependency_links to mavros.egg-info/dependency_links.txt
+[43.590s] writing entry points to mavros.egg-info/entry_points.txt
+[43.591s] writing top-level names to mavros.egg-info/top_level.txt
+[43.592s] writing manifest file 'mavros.egg-info/SOURCES.txt'
+[43.606s] reading manifest file 'mavros.egg-info/SOURCES.txt'
+[43.611s] writing manifest file 'mavros.egg-info/SOURCES.txt'
+[43.790s] [ 16%] Built target ament_cmake_python_build_mavros_egg
+[43.834s] [ 17%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/ftf_frame_conversions.cpp.o[0m
+[48.959s] [ 19%] [32m[1mLinking CXX static library libgmock.a[0m
+[49.495s] [ 19%] Built target gmock
+[49.546s] [ 20%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/ftf_quaternion_utils.cpp.o[0m
+[62.935s] [ 22%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_router.cpp.o[0m
+[68.239s] [ 24%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_uas.cpp.o[0m
+[89.661s] [ 25%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/plugin.cpp.o[0m
+[94.054s] [ 27%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_ap.cpp.o[0m

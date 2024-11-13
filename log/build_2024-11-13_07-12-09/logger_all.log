@@ -1,0 +1,177 @@
+[1.165s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--executor', 'sequential']
+[1.165s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='sequential', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff9b866650>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9b95acb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9b95acb0>>, mixin_verb=('build',))
+[2.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.509s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/bumblebee*/bumblebee_ws'
+[2.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.584s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.584s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.591s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.591s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.591s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.591s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.591s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.592s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.593s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extensions ['ignore', 'ignore_ament_install']
+[2.593s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'ignore'
+[2.593s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'ignore_ament_install'
+[2.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extensions ['colcon_pkg']
+[2.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'colcon_pkg'
+[2.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extensions ['colcon_meta']
+[2.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'colcon_meta'
+[2.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extensions ['ros']
+[2.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'ros'
+[2.624s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mavros' with type 'ros.ament_cmake' and name 'mavros'
+[2.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_extras) by extensions ['ignore', 'ignore_ament_install']
+[2.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_extras) by extension 'ignore'
+[2.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_extras) by extension 'ignore_ament_install'
+[2.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_extras) by extensions ['colcon_pkg']
+[2.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_extras) by extension 'colcon_pkg'
+[2.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_extras) by extensions ['colcon_meta']
+[2.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_extras) by extension 'colcon_meta'
+[2.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_extras) by extensions ['ros']
+[2.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_extras) by extension 'ros'
+[2.642s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mavros_extras' with type 'ros.ament_cmake' and name 'mavros_extras'
+[2.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_msgs) by extension 'ignore'
+[2.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_msgs) by extension 'ignore_ament_install'
+[2.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_msgs) by extensions ['colcon_pkg']
+[2.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_msgs) by extension 'colcon_pkg'
+[2.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_msgs) by extensions ['colcon_meta']
+[2.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_msgs) by extension 'colcon_meta'
+[2.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_msgs) by extensions ['ros']
+[2.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros_msgs) by extension 'ros'
+[2.658s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mavros_msgs' with type 'ros.ament_cmake' and name 'mavros_msgs'
+[2.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.838s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.838s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.861s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 279 installed packages in /opt/ros/humble
+[2.868s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.048s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_args' from command line to 'None'
+[3.048s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_target' from command line to 'None'
+[3.048s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.049s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[3.049s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[3.049s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[3.049s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[3.049s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[3.049s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.049s] DEBUG:colcon.colcon_core.verb:Building package 'mavros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bumblebee*/bumblebee_ws/build/mavros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bumblebee*/bumblebee_ws/install/mavros_msgs', 'merge_install': False, 'path': '/home/bumblebee*/bumblebee_ws/src/mavros_msgs', 'symlink_install': False, 'test_result_base': None}
+[3.051s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_args' from command line to 'None'
+[3.051s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_target' from command line to 'None'
+[3.051s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.051s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_clean_cache' from command line to 'False'
+[3.051s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_clean_first' from command line to 'False'
+[3.051s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_force_configure' from command line to 'False'
+[3.051s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'ament_cmake_args' from command line to 'None'
+[3.052s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'catkin_cmake_args' from command line to 'None'
+[3.052s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.052s] DEBUG:colcon.colcon_core.verb:Building package 'mavros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bumblebee*/bumblebee_ws/build/mavros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bumblebee*/bumblebee_ws/install/mavros', 'merge_install': False, 'path': '/home/bumblebee*/bumblebee_ws/src/mavros', 'symlink_install': False, 'test_result_base': None}
+[3.053s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_args' from command line to 'None'
+[3.054s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_target' from command line to 'None'
+[3.054s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.054s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_clean_cache' from command line to 'False'
+[3.054s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_clean_first' from command line to 'False'
+[3.054s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_force_configure' from command line to 'False'
+[3.054s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'ament_cmake_args' from command line to 'None'
+[3.054s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'catkin_cmake_args' from command line to 'None'
+[3.054s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.054s] DEBUG:colcon.colcon_core.verb:Building package 'mavros_extras' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bumblebee*/bumblebee_ws/build/mavros_extras', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bumblebee*/bumblebee_ws/install/mavros_extras', 'merge_install': False, 'path': '/home/bumblebee*/bumblebee_ws/src/mavros_extras', 'symlink_install': False, 'test_result_base': None}
+[3.055s] INFO:colcon.colcon_core.executor:Executing jobs using 'sequential' executor
+[3.058s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mavros_msgs'
+[3.059s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bumblebee*/bumblebee_ws/src/mavros_msgs' with build type 'ament_cmake'
+[3.060s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bumblebee*/bumblebee_ws/src/mavros_msgs'
+[3.092s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.093s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.094s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.148s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bumblebee*/bumblebee_ws/build/mavros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/bumblebee*/bumblebee_ws/build/mavros_msgs -- -j4 -l4
+[6.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bumblebee*/bumblebee_ws/build/mavros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/bumblebee*/bumblebee_ws/build/mavros_msgs -- -j4 -l4
+[24.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bumblebee*/bumblebee_ws/build/mavros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/bumblebee*/bumblebee_ws/build/mavros_msgs
+[26.084s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mavros_msgs)
+[26.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bumblebee*/bumblebee_ws/build/mavros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/bumblebee*/bumblebee_ws/build/mavros_msgs
+[26.110s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs' for CMake module files
+[26.116s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs' for CMake config files
+[26.127s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_msgs', 'cmake_prefix_path')
+[26.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.ps1'
+[26.134s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.dsv'
+[26.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.sh'
+[26.146s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib'
+[26.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_msgs', 'ld_library_path_lib')
+[26.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.ps1'
+[26.150s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.dsv'
+[26.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.sh'
+[26.155s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/bin'
+[26.155s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib/pkgconfig/mavros_msgs.pc'
+[26.156s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib/python3.10/site-packages'
+[26.157s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/bin'
+[26.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/package.ps1'
+[26.163s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/package.dsv'
+[26.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/package.sh'
+[26.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/package.bash'
+[26.177s] INFO:colcon.colcon_core.shell:Creating package script '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/package.zsh'
+[26.181s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/colcon-core/packages/mavros_msgs)
+[43.377s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mavros_msgs)
+[43.378s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs' for CMake module files
+[43.386s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs' for CMake config files
+[43.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_msgs', 'cmake_prefix_path')
+[43.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.ps1'
+[43.397s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.dsv'
+[43.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.sh'
+[43.401s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib'
+[43.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_msgs', 'ld_library_path_lib')
+[43.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.ps1'
+[43.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.dsv'
+[43.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.sh'
+[43.408s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/bin'
+[43.409s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib/pkgconfig/mavros_msgs.pc'
+[43.410s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib/python3.10/site-packages'
+[43.410s] Level 1:colcon.colcon_core.environment:checking '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/bin'
+[43.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/package.ps1'
+[43.416s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/package.dsv'
+[43.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/package.sh'
+[43.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/package.bash'
+[43.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/mavros_msgs/package.zsh'
+[43.426s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bumblebee*/bumblebee_ws/install/mavros_msgs/share/colcon-core/packages/mavros_msgs)
+[43.428s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mavros_msgs' finished with '0'
+[43.428s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mavros'
+[43.429s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bumblebee*/bumblebee_ws/src/mavros' with build type 'ament_cmake'
+[43.429s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bumblebee*/bumblebee_ws/src/mavros'
+[43.430s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[43.430s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[43.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bumblebee*/bumblebee_ws/build/mavros': AMENT_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bumblebee*/bumblebee_ws/install/mavros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bumblebee*/bumblebee_ws/build/mavros -- -j4 -l4

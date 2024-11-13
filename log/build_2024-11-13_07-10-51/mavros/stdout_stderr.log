@@ -1,0 +1,37 @@
+gmake[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/compiler_depend.make' has modification time 67 s in the future
+gmake[2]: Warning: File 'CMakeFiles/mavros.dir/compiler_depend.make' has modification time 67 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/compiler_depend.make' has modification time 66 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[  0%] Built target ament_cmake_python_copy_mavros_setup
+gmake[2]: Warning: File 'CMakeFiles/mavros.dir/compiler_depend.make' has modification time 66 s in the future
+gmake[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/compiler_depend.make' has modification time 67 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[  3%] Built target gtest_main
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[  3%] Built target ament_cmake_python_copy_mavros
+gmake[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/compiler_depend.make' has modification time 66 s in the future
+gmake[2]: Warning: File 'gmock/CMakeFiles/gmock_main.dir/compiler_depend.make' has modification time 66 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[2]: Warning: File 'gmock/CMakeFiles/gmock.dir/compiler_depend.make' has modification time 66 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[  6%] Built target gtest
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[2]: Warning: File 'gmock/CMakeFiles/gmock_main.dir/compiler_depend.make' has modification time 66 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[2]: Warning: File 'gmock/CMakeFiles/gmock.dir/compiler_depend.make' has modification time 66 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 11%] Built target gmock
+[ 14%] Built target gmock_main
+[ 16%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_router.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_uas.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/plugin.cpp.o[0m
+running egg_info
+writing mavros.egg-info/PKG-INFO
+writing dependency_links to mavros.egg-info/dependency_links.txt
+writing entry points to mavros.egg-info/entry_points.txt
+writing top-level names to mavros.egg-info/top_level.txt
+reading manifest file 'mavros.egg-info/SOURCES.txt'
+writing manifest file 'mavros.egg-info/SOURCES.txt'
+[ 19%] Built target ament_cmake_python_build_mavros_egg
+[ 20%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_ap.cpp.o[0m

@@ -1,0 +1,154 @@
+[0.000000] (-) TimerEvent: {}
+[0.001202] (-) JobUnselected: {'identifier': 'mavros'}
+[0.001424] (-) JobUnselected: {'identifier': 'mavros_msgs'}
+[0.001520] (mavros_extras) JobQueued: {'identifier': 'mavros_extras', 'dependencies': OrderedDict([('mavros_msgs', '/home/bumblebee*/bumblebee_ws/install/mavros_msgs'), ('mavros', '/home/bumblebee*/bumblebee_ws/install/mavros')])}
+[0.001839] (mavros_extras) JobStarted: {'identifier': 'mavros_extras'}
+[0.098723] (-) TimerEvent: {}
+[0.104874] (mavros_extras) JobProgress: {'identifier': 'mavros_extras', 'progress': 'cmake'}
+[0.105799] (mavros_extras) Command: {'cmd': ['/usr/bin/cmake', '/home/bumblebee*/bumblebee_ws/src/mavros_extras', '-DCMAKE_INSTALL_PREFIX=/home/bumblebee*/bumblebee_ws/install/mavros_extras'], 'cwd': '/home/bumblebee*/bumblebee_ws/build/mavros_extras', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bumblebee'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bumblebee*'), ('OLDPWD', '/home/bumblebee*'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('MANAGERPID', '1592'), ('SYSTEMD_EXEC_PID', '1818'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2075'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bumblebee'), ('JOURNAL_STREAM', '8:27982'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bumblebee'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1676,unix/ubuntu:/tmp/.ICE-unix/1676'), ('INVOCATION_ID', 'c4193d842c784705bd2d135b6ae2942c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BWM8W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bumblebee*/bumblebee_ws/install/mavros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bumblebee*/bumblebee_ws/build/mavros_extras'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bumblebee*/bumblebee_ws/install/mavros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bumblebee*/bumblebee_ws/install/mavros_msgs:/opt/ros/humble')]), 'shell': False}
+[0.199047] (-) TimerEvent: {}
+[0.300076] (-) TimerEvent: {}
+[0.400902] (-) TimerEvent: {}
+[0.501680] (-) TimerEvent: {}
+[0.602519] (-) TimerEvent: {}
+[0.703582] (-) TimerEvent: {}
+[0.804715] (-) TimerEvent: {}
+[0.905727] (-) TimerEvent: {}
+[1.006672] (-) TimerEvent: {}
+[1.107666] (-) TimerEvent: {}
+[1.183596] (mavros_extras) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.207848] (-) TimerEvent: {}
+[1.308679] (-) TimerEvent: {}
+[1.409533] (-) TimerEvent: {}
+[1.510566] (-) TimerEvent: {}
+[1.611592] (-) TimerEvent: {}
+[1.712715] (-) TimerEvent: {}
+[1.813899] (-) TimerEvent: {}
+[1.907093] (mavros_extras) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.914053] (-) TimerEvent: {}
+[1.956116] (mavros_extras) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.014280] (-) TimerEvent: {}
+[2.115239] (-) TimerEvent: {}
+[2.216246] (-) TimerEvent: {}
+[2.316955] (-) TimerEvent: {}
+[2.349271] (mavros_extras) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.377288] (mavros_extras) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.380817] (mavros_extras) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.383614] (mavros_extras) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.399154] (mavros_extras) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.417139] (-) TimerEvent: {}
+[2.517874] (-) TimerEvent: {}
+[2.618851] (-) TimerEvent: {}
+[2.719698] (-) TimerEvent: {}
+[2.781371] (mavros_extras) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.809749] (mavros_extras) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.810667] (mavros_extras) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.812322] (mavros_extras) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.819830] (-) TimerEvent: {}
+[2.858014] (mavros_extras) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.920021] (-) TimerEvent: {}
+[3.020696] (-) TimerEvent: {}
+[3.121466] (-) TimerEvent: {}
+[3.222256] (-) TimerEvent: {}
+[3.323094] (-) TimerEvent: {}
+[3.423855] (-) TimerEvent: {}
+[3.524610] (-) TimerEvent: {}
+[3.625605] (-) TimerEvent: {}
+[3.657814] (mavros_extras) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.725810] (-) TimerEvent: {}
+[3.826489] (-) TimerEvent: {}
+[3.927200] (-) TimerEvent: {}
+[4.027953] (-) TimerEvent: {}
+[4.128656] (-) TimerEvent: {}
+[4.229314] (-) TimerEvent: {}
+[4.329992] (-) TimerEvent: {}
+[4.360338] (mavros_extras) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.430191] (-) TimerEvent: {}
+[4.530997] (-) TimerEvent: {}
+[4.631701] (-) TimerEvent: {}
+[4.732402] (-) TimerEvent: {}
+[4.833056] (-) TimerEvent: {}
+[4.865087] (mavros_extras) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.924824] (mavros_extras) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.933233] (-) TimerEvent: {}
+[5.008085] (mavros_extras) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.033420] (-) TimerEvent: {}
+[5.134115] (-) TimerEvent: {}
+[5.162124] (mavros_extras) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.234314] (-) TimerEvent: {}
+[5.315148] (mavros_extras) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.334458] (-) TimerEvent: {}
+[5.435136] (-) TimerEvent: {}
+[5.535867] (-) TimerEvent: {}
+[5.636578] (-) TimerEvent: {}
+[5.715589] (mavros_extras) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.736742] (-) TimerEvent: {}
+[5.754270] (mavros_extras) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.836937] (-) TimerEvent: {}
+[5.937649] (-) TimerEvent: {}
+[6.038339] (-) TimerEvent: {}
+[6.139028] (-) TimerEvent: {}
+[6.239793] (-) TimerEvent: {}
+[6.340592] (-) TimerEvent: {}
+[6.441334] (-) TimerEvent: {}
+[6.445514] (mavros_extras) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.541548] (-) TimerEvent: {}
+[6.642288] (-) TimerEvent: {}
+[6.728614] (mavros_extras) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.742530] (-) TimerEvent: {}
+[6.843242] (-) TimerEvent: {}
+[6.943976] (-) TimerEvent: {}
+[7.044761] (-) TimerEvent: {}
+[7.145474] (-) TimerEvent: {}
+[7.181339] (mavros_extras) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.245715] (-) TimerEvent: {}
+[7.285415] (mavros_extras) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.346039] (-) TimerEvent: {}
+[7.446938] (-) TimerEvent: {}
+[7.547693] (-) TimerEvent: {}
+[7.648451] (-) TimerEvent: {}
+[7.675460] (mavros_extras) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.678416] (mavros_extras) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.748681] (-) TimerEvent: {}
+[7.849526] (-) TimerEvent: {}
+[7.950420] (-) TimerEvent: {}
+[8.035727] (mavros_extras) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.039991] (mavros_extras) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.050576] (-) TimerEvent: {}
+[8.151266] (-) TimerEvent: {}
+[8.252048] (-) TimerEvent: {}
+[8.352792] (-) TimerEvent: {}
+[8.407660] (mavros_extras) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[8.452973] (-) TimerEvent: {}
+[8.553685] (-) TimerEvent: {}
+[8.654424] (-) TimerEvent: {}
+[8.690337] (mavros_extras) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[8.754646] (-) TimerEvent: {}
+[8.855324] (-) TimerEvent: {}
+[8.942426] (mavros_extras) StdoutLine: {'line': b'-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[8.955492] (-) TimerEvent: {}
+[9.056219] (-) TimerEvent: {}
+[9.156958] (-) TimerEvent: {}
+[9.174325] (mavros_extras) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:30 (find_package):\n'}
+[9.175064] (mavros_extras) StderrLine: {'line': b'  By not providing "Findmavros.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[9.175449] (mavros_extras) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "mavros", but\n'}
+[9.175748] (mavros_extras) StderrLine: {'line': b'  CMake did not find one.\n'}
+[9.176047] (mavros_extras) StderrLine: {'line': b'\n'}
+[9.176339] (mavros_extras) StderrLine: {'line': b'  Could not find a package configuration file provided by "mavros" with any\n'}
+[9.176698] (mavros_extras) StderrLine: {'line': b'  of the following names:\n'}
+[9.177081] (mavros_extras) StderrLine: {'line': b'\n'}
+[9.177413] (mavros_extras) StderrLine: {'line': b'    mavrosConfig.cmake\n'}
+[9.178071] (mavros_extras) StderrLine: {'line': b'    mavros-config.cmake\n'}
+[9.178705] (mavros_extras) StderrLine: {'line': b'\n'}
+[9.179239] (mavros_extras) StderrLine: {'line': b'  Add the installation prefix of "mavros" to CMAKE_PREFIX_PATH or set\n'}
+[9.179625] (mavros_extras) StderrLine: {'line': b'  "mavros_DIR" to a directory containing one of the above files.  If "mavros"\n'}
+[9.179962] (mavros_extras) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[9.180277] (mavros_extras) StderrLine: {'line': b'  installed.\n'}
+[9.180596] (mavros_extras) StderrLine: {'line': b'\n'}
+[9.180934] (mavros_extras) StderrLine: {'line': b'\x1b[0m\n'}
+[9.181276] (mavros_extras) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[9.181641] (mavros_extras) StdoutLine: {'line': b'See also "/home/bumblebee*/bumblebee_ws/build/mavros_extras/CMakeFiles/CMakeOutput.log".\n'}
+[9.216165] (mavros_extras) CommandEnded: {'returncode': 1}
+[9.257097] (-) TimerEvent: {}
+[9.319615] (mavros_extras) JobEnded: {'identifier': 'mavros_extras', 'rc': 1}
+[9.331680] (-) EventReactorShutdown: {}
