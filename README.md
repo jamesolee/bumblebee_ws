@@ -3,5 +3,5 @@ bumblebee_ws
 ========
 ROS2 workspace for the FASTR Bumblebee drone
 
-ROS 2 dependencies (ensure the following are installed via apt-get):
+Additional requirements (ensure the following are installed via apt-get):
 - vrpn_mocap
